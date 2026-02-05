@@ -28,7 +28,6 @@ function App() {
             if (!isMounted) return
             setAllCities(cities)
             setRounds(generateRounds(cities, 10))
-            setCurrent(0)
         })()
         return () => {
             isMounted = false
@@ -45,11 +44,13 @@ function App() {
                 type: 'correct',
                 message: `Correct! ${guess.name} has a population of ${guess.population} while ${other.name} has ${other.population}`,
             })
+            setCurrent(current + 1)
         } else {
             setFeedback({
                 type: 'wrong',
                 message: `Wrong! ${guess.name} has a population of ${guess.population} while ${other.name} has ${other.population}`,
             })
+            setCurrent(0)
         }
 
         // Show feedback briefly, then advance to the next round
@@ -60,7 +61,6 @@ function App() {
                 next[current] = sliceCities(allCities, 2)
                 return next
             })
-            setCurrent(c => (c + 1) % rounds.length)
             setIsLocked(false)
         }, 3000)
     }
@@ -81,11 +81,18 @@ function App() {
                 </div>
             )}
             <div className="w-full max-w-4xl">
-                <h1 className="text-2xl font-bold mb-6 fixed-top">Numberight</h1>
-                <div className="mb-4">Round {current + 1} / {rounds.length}</div>
+                <h1 className="text-2xl font-bold mb-6 fixed-top box-decoration-clone bg-linear-to-r">Numberight</h1>
+                <div className="mb-6">Which City 🏙️ has MORE inhabitants?
+                                    Click on the city you think is larger.</div>
+                <div className="text-2xl font-bold mb-6 fixed-top">🎯 Current Score: {current}</div>
                 <div className="flex flex-col md:flex-row gap-6">
                     {rounds.length > 0 && (
-                        <CardList options={rounds[current]} onClick={(city) => handleGuess(city)} />
+                        <CardList
+                            key={rounds[current]?.map((city) => city.name).join('|')}
+                            className="card-list-enter"
+                            options={rounds[current]}
+                            onClick={(city) => handleGuess(city)}
+                        />
                     )}
                 </div>
             </div>
