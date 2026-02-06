@@ -1,0 +1,1138 @@
+[
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 23,
+    "name": "Ariquemes",
+    "population": 109170,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Municip_Ariquemes.jpg"
+  },
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 49,
+    "name": "Cacoal",
+    "population": 98280,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cacoal_-_Rond%C3%B4nia.jpg"
+  },
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 122,
+    "name": "Ji-Paraná",
+    "population": 140101,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Ji-Parana_005.jpg"
+  },
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 205,
+    "name": "Porto Velho",
+    "population": 517709,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Porto_Velho_RO.jpg"
+  },
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 288,
+    "name": "Rolim de Moura",
+    "population": 62959,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Rolim_de_moura_-_foto_da_rotat%C3%B3ria.JPG"
+  },
+  {
+    "state": "RO",
+    "stateCode": 11,
+    "cityCode": 304,
+    "name": "Vilhena",
+    "population": 109651,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Vilhena_RO.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 1209,
+    "name": "Coari",
+    "population": 73576,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Igreja_Matriz_de_Coari_%282020%29.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 1704,
+    "name": "Humaitá",
+    "population": 63454,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Casa_colonial_humaita_2.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 1852,
+    "name": "Iranduba",
+    "population": 68862,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Iranduba.JPG"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 1902,
+    "name": "Itacoatiara",
+    "population": 113917,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Itacoatiara_beach.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 2504,
+    "name": "Manacapuru",
+    "population": 111751,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Manacapuru_2024.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 2603,
+    "name": "Manaus",
+    "population": 2303732,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Manaus_amazonas.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 2702,
+    "name": "Manicoré",
+    "population": 58018,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Manicor%C3%A9_vista_a%C3%A9rea.png"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 2900,
+    "name": "Maués",
+    "population": 66336,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Ilha_Michilhes_-_Tribo_Satere_Maue.JPG"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 3403,
+    "name": "Parintins",
+    "population": 101855,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Parintins_Amazonas_Brazil.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 3809,
+    "name": "São Gabriel da Cachoeira",
+    "population": 57396,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sao_Gabriel_da_Cachoeira.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 4062,
+    "name": "Tabatinga",
+    "population": 73348,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Tabatinga_Amazonas.jpg"
+  },
+  {
+    "state": "AM",
+    "stateCode": 13,
+    "cityCode": 4203,
+    "name": "Tefé",
+    "population": 80137,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Reserva_de_Desenvolvimento_Sustent%C3%A1vel_Mamirau%C3%A1_e_Aman%C3%A3_%2851125990637%29.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 107,
+    "name": "Abaetetuba",
+    "population": 172344,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Abaete_nas_alturas.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 206,
+    "name": "Acará",
+    "population": 63110,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Acar%C3%A1_-_State_of_Par%C3%A1%2C_Brazil_-_panoramio.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 800,
+    "name": "Ananindeua",
+    "population": 509227,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/AnanindeuaColagem.png"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 1402,
+    "name": "Belém",
+    "population": 1397315,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/L1010748-L1010765_copie_%28cropped%29.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 2103,
+    "name": "Cametá",
+    "population": 144859,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Para_Municip_Cameta.svg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 2152,
+    "name": "Canaã dos Carajás",
+    "population": 89524,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Aspecto_de_Cana%C3%A3.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 2301,
+    "name": "Capitão Poço",
+    "population": 60318,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/UFRA_Capit%C3%A3o_Po%C3%A7o.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 2400,
+    "name": "Castanhal",
+    "population": 209126,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Para_Municip_Castanhal.svg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 2939,
+    "name": "Dom Eliseu",
+    "population": 62823,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Dom_Eliseu_%28Vista_A%C3%A9rea%29.JPG"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 3309,
+    "name": "Igarapé-Miri",
+    "population": 69446,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Igarap%C3%A9miri.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 3606,
+    "name": "Itaituba",
+    "population": 135369,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Itaituba.JPG"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 4208,
+    "name": "Marabá",
+    "population": 290975,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Vista_panor%C3%A2mica_da_Nova_Marab%C3%A1.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 4422,
+    "name": "Marituba",
+    "population": 119437,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Para_Municip_Marituba.svg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 4703,
+    "name": "Moju",
+    "population": 91760,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Moju_-_panoramio_%282%29.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 5064,
+    "name": "Novo Repartimento",
+    "population": 63796,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Para_Municip_NovoRepartimento.svg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 5304,
+    "name": "Oriximiná",
+    "population": 72889,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Oriximina.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 5502,
+    "name": "Paragominas",
+    "population": 113498,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cidade_de_Paragominas_IMG_0897.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 5536,
+    "name": "Parauapebas",
+    "population": 305771,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/PA-275%2C_Parauapebas%2C_dez_2019.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 6187,
+    "name": "Rondon do Pará",
+    "population": 57031,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rondon_Para_1.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 6500,
+    "name": "Santa Izabel do Pará",
+    "population": 79195,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Main_street_of_Santa_Isabel_do_Par%C3%A1%2C_2018.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 7300,
+    "name": "São Félix do Xingu",
+    "population": 64651,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Para_Municip_SaoFelixdoXingu.svg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 7953,
+    "name": "Tailândia",
+    "population": 75290,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tailandia-pa.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 8001,
+    "name": "Tomé-Açu",
+    "population": 73058,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tome_a%C3%A7u_026.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 8100,
+    "name": "Tucuruí",
+    "population": 96119,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/The_margin_of_Tucuru%C3%AD_city.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 8308,
+    "name": "Viseu",
+    "population": 62189,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/S%C3%A9_de_Viseu_IMG_20141226_155323-Pano_%2836162491774%29.jpg"
+  },
+  {
+    "state": "PA",
+    "stateCode": 15,
+    "cityCode": 8407,
+    "name": "Xinguara",
+    "population": 57768,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/XINGUARA.JPG"
+  },
+  {
+    "state": "AP",
+    "stateCode": 16,
+    "cityCode": 303,
+    "name": "Macapá",
+    "population": 489676,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Macap%C3%A1_Montage_%282021%29.jpg"
+  },
+  {
+    "state": "TO",
+    "stateCode": 17,
+    "cityCode": 2109,
+    "name": "Araguaína",
+    "population": 183024,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Araguaina-TO.jpg"
+  },
+  {
+    "state": "TO",
+    "stateCode": 17,
+    "cityCode": 9500,
+    "name": "Gurupi",
+    "population": 90209,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/GurupiTocantins.jpg"
+  },
+  {
+    "state": "TO",
+    "stateCode": 17,
+    "cityCode": 16109,
+    "name": "Paraíso do Tocantins",
+    "population": 55704,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/2008_Bernado_Sayao_Paraiso_do_Tocantins.jpg"
+  },
+  {
+    "state": "TO",
+    "stateCode": 17,
+    "cityCode": 18204,
+    "name": "Porto Nacional",
+    "population": 69551,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Tocantins_Municip_PortoNacional.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 55,
+    "name": "Açailândia",
+    "population": 110611,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maranhao_Municip_Acailandia.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 1202,
+    "name": "Bacabal",
+    "population": 107755,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Maranhao_Municip_Bacabal.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 1608,
+    "name": "Barra do Corda",
+    "population": 87757,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/21_12_2012_Barra_do_Corda_MA.JPG"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 1707,
+    "name": "Barreirinhas",
+    "population": 68234,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Mar2024._Barreirinhas%2C_Maranh%C3%A3o%2C_Brazil._03.jpg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 2325,
+    "name": "Buriticupu",
+    "population": 56733,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Maranhao_Municip_Buriticupu.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 3208,
+    "name": "Chapadinha",
+    "population": 84395,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Maranhao_Municip_Chapadinha.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 3307,
+    "name": "Codó",
+    "population": 118283,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Igreja_de_S%C3%A3o_Sebasti%C3%A3o%2C_Cod%C3%B3%2C_Maranh%C3%A3o.jpg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 3604,
+    "name": "Coroatá",
+    "population": 61337,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Vista_da_Catedral_Nossa_Senhora_da_Piedade%2C_Coroat%C3%A1_MA.jpg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 4800,
+    "name": "Grajaú",
+    "population": 76837,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Centro_da_cidade_de_grajau_vista_do_alto_do_morro.jpg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 5302,
+    "name": "Imperatriz",
+    "population": 285806,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Montagem_Imperatriz_MA.png"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 5401,
+    "name": "Itapecuru Mirim",
+    "population": 62264,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maranhao_Municip_ItapecuruMirim.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 7506,
+    "name": "Paço do Lumiar",
+    "population": 153158,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Maranhao_Municip_PacodoLumiar.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 9908,
+    "name": "Santa Inês",
+    "population": 88249,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Igreja_Matriz_de_Santa_In%C3%AAs_in_Santa_In%C3%AAs%2C_Maranh%C3%A3o%2C_Brazil.jpg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 11201,
+    "name": "São José de Ribamar",
+    "population": 259164,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Maranhao_Municip_SaoJosedeRibamar.svg"
+  },
+  {
+    "state": "MA",
+    "stateCode": 21,
+    "cityCode": 12506,
+    "name": "Tutóia",
+    "population": 55076,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Mar2024._Tut%C3%B3ia%2C_State_of_Maranh%C3%A3o%2C_Brazil._Sede_da_Prefeitura_07.jpg"
+  },
+  {
+    "state": "PI",
+    "stateCode": 22,
+    "cityCode": 7702,
+    "name": "Parnaíba",
+    "population": 170491,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Parna%C3%ADba_21.jpg"
+  },
+  {
+    "state": "PI",
+    "stateCode": 22,
+    "cityCode": 8007,
+    "name": "Picos",
+    "population": 86701,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Piaui_Municip_Picos.svg"
+  },
+  {
+    "state": "PI",
+    "stateCode": 22,
+    "cityCode": 8403,
+    "name": "Piripiri",
+    "population": 67887,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/African_red_devil_peppers.jpg"
+  },
+  {
+    "state": "PI",
+    "stateCode": 22,
+    "cityCode": 11001,
+    "name": "Teresina",
+    "population": 905692,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Montagem_Teresina.jpg"
+  },
+  {
+    "state": "CE",
+    "stateCode": 23,
+    "cityCode": 5407,
+    "name": "Icó",
+    "population": 64745,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ceara_Municip_Ico.svg"
+  },
+  {
+    "state": "CE",
+    "stateCode": 23,
+    "cityCode": 7700,
+    "name": "Maranguape",
+    "population": 108622,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Prefeitura_maranguape.jpg"
+  },
+  {
+    "state": "CE",
+    "stateCode": 23,
+    "cityCode": 11801,
+    "name": "Russas",
+    "population": 74834,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Igreja_Matriz_em_Russas.jpg"
+  },
+  {
+    "state": "CE",
+    "stateCode": 23,
+    "cityCode": 13500,
+    "name": "Trairi",
+    "population": 62004,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Munda%C3%BA_CE_-_Praia_deserta_e_ensolarada.jpg"
+  },
+  {
+    "state": "RN",
+    "stateCode": 24,
+    "cityCode": 3251,
+    "name": "Parnamirim",
+    "population": 271713,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Praia1.jpg"
+  },
+  {
+    "state": "RN",
+    "stateCode": 24,
+    "cityCode": 12203,
+    "name": "São José de Mipibu",
+    "population": 50053,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/SjMipibu.jpg"
+  },
+  {
+    "state": "PE",
+    "stateCode": 26,
+    "cityCode": 54,
+    "name": "Abreu e Lima",
+    "population": 104248,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Mapa_de_Abreu_e_Lima_%282%29.png"
+  },
+  {
+    "state": "PE",
+    "stateCode": 26,
+    "cityCode": 2902,
+    "name": "Cabo de Santo Agostinho",
+    "population": 218049,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Vista_%C3%A1rea_da_unidade_acad%C3%AAmica_do_cabo_de_santo_agostinho.jpg"
+  },
+  {
+    "state": "PE",
+    "stateCode": 26,
+    "cityCode": 6200,
+    "name": "Goiana",
+    "population": 85497,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Goiana_-_PE.jpg"
+  },
+  {
+    "state": "PE",
+    "stateCode": 26,
+    "cityCode": 13701,
+    "name": "São Lourenço da Mata",
+    "population": 118258,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Mapa_de_S%C3%A3o_Louren%C3%A7o_da_Mata_%282%29.png"
+  },
+  {
+    "state": "AL",
+    "stateCode": 27,
+    "cityCode": 2405,
+    "name": "Delmiro Gouveia",
+    "population": 52845,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Alagoas_Municip_DelmiroGouveia.svg"
+  },
+  {
+    "state": "AL",
+    "stateCode": 27,
+    "cityCode": 8600,
+    "name": "São Miguel dos Campos",
+    "population": 53380,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Sao_Miguel_dos_Campos.jpg"
+  },
+  {
+    "state": "SE",
+    "stateCode": 28,
+    "cityCode": 4805,
+    "name": "Nossa Senhora do Socorro",
+    "population": 204081,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sergipe_Municip_NossaSenhoradoSocorro.svg"
+  },
+  {
+    "state": "BA",
+    "stateCode": 29,
+    "cityCode": 2708,
+    "name": "Barra",
+    "population": 53642,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Isle_of_Barra_flag.svg"
+  },
+  {
+    "state": "BA",
+    "stateCode": 29,
+    "cityCode": 6006,
+    "name": "Campo Formoso",
+    "population": 75112,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Bahia_Municip_CampoFormoso.svg"
+  },
+  {
+    "state": "BA",
+    "stateCode": 29,
+    "cityCode": 14604,
+    "name": "Irecê",
+    "population": 78781,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Bahia_Municip_Irece.svg"
+  },
+  {
+    "state": "BA",
+    "stateCode": 29,
+    "cityCode": 17508,
+    "name": "Jacobina",
+    "population": 86896,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Vista_da_cidade_de_Jacobina-BA.jpg"
+  },
+  {
+    "state": "BA",
+    "stateCode": 29,
+    "cityCode": 25105,
+    "name": "Poções",
+    "population": 50773,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Pocoes.jpg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 6200,
+    "name": "Belo Horizonte",
+    "population": 2415872,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Praca_do_Papa%2C_Belo_Horizonte_%28cropped%292.jpg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 11200,
+    "name": "Campo Belo",
+    "population": 54027,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Corredor_de_arvores.jpg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 19401,
+    "name": "Coronel Fabriciano",
+    "population": 108708,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vista_parcial_de_Coronel_Fabriciano_MG_a_partir_de_Tim%C3%B3teo2.JPG"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 27107,
+    "name": "Frutal",
+    "population": 61275,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/MinasGerais_Municip_Frutal.svg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 31901,
+    "name": "Itabirito",
+    "population": 56369,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/MinasGerais_Municip_Itabirito.svg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 35209,
+    "name": "Januária",
+    "population": 67123,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/MinasGerais_Municip_Januaria.svg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 45208,
+    "name": "Nova Serrana",
+    "population": 114791,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/MinasGerais_Municip_NovaSerrana.svg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 48103,
+    "name": "Patrocínio",
+    "population": 94357,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/MinasGerais_Municip_Patrocinio.svg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 54606,
+    "name": "Ribeirão das Neves",
+    "population": 346971,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Centro_de_Ribeir%C3%A3o_das_Neves.jpg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 67202,
+    "name": "Sete Lagoas",
+    "population": 238909,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Sete_Lagoas_30.05.2022.jpg"
+  },
+  {
+    "state": "MG",
+    "stateCode": 31,
+    "cityCode": 70107,
+    "name": "Uberaba",
+    "population": 356781,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Parque_Mata_do_Ip%C3%AA%2C_Uberaba_2.jpg"
+  },
+  {
+    "state": "ES",
+    "stateCode": 32,
+    "cityCode": 3908,
+    "name": "Nova Venécia",
+    "population": 52324,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/EspiritoSanto_Municip_NovaVenecia.svg"
+  },
+  {
+    "state": "RJ",
+    "stateCode": 33,
+    "cityCode": 100,
+    "name": "Angra dos Reis",
+    "population": 179142,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Angra_dos_Reis%2C_Brazil_2018_116.jpg"
+  },
+  {
+    "state": "RJ",
+    "stateCode": 33,
+    "cityCode": 803,
+    "name": "Cachoeiras de Macacu",
+    "population": 59861,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Cachoeiras_de_Macacu.jpg"
+  },
+  {
+    "state": "RJ",
+    "stateCode": 33,
+    "cityCode": 2007,
+    "name": "Itaguaí",
+    "population": 124021,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Itagua%C3%AD.jpg"
+  },
+  {
+    "state": "RJ",
+    "stateCode": 33,
+    "cityCode": 5208,
+    "name": "São Pedro da Aldeia",
+    "population": 110677,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pra%C3%A7a_da_Igreja_Matriz_de_S%C3%A3o_Pedro_da_Aldeia.jpg"
+  },
+  {
+    "state": "RJ",
+    "stateCode": 33,
+    "cityCode": 6305,
+    "name": "Volta Redonda",
+    "population": 279971,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Pra%C3%A7a_Oscar_Cardoso.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 3208,
+    "name": "Araraquara",
+    "population": 253474,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Araraquara_%282020_October%29_002.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 4107,
+    "name": "Atibaia",
+    "population": 167161,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Atibaiabourbon.JPG"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 6359,
+    "name": "Bertioga",
+    "population": 67436,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Vista_da_Riviera.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 12803,
+    "name": "Cosmópolis",
+    "population": 61167,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/SaoPaulo_Municip_Cosmopolis.svg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 15103,
+    "name": "Embu-Guaçu",
+    "population": 68913,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Igreja_matriz_de_Embu-Gua%C3%A7u.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 16408,
+    "name": "Franco da Rocha",
+    "population": 150241,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/VIADUTO_DE_FRANCO_DA_ROCHA.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 19709,
+    "name": "Ibiúna",
+    "population": 77801,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/SaoPaulo_Municip_Ibiuna.svg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 25003,
+    "name": "Jandira",
+    "population": 121550,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/SaoPaulo_Municip_Jandira.svg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 29302,
+    "name": "Matão",
+    "population": 81075,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Mat%C3%A3o_01.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 30706,
+    "name": "Mogi Guaçu",
+    "population": 160318,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Mogi_Gua%C3%A7u_Janeiro_de_2020.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 34401,
+    "name": "Osasco",
+    "population": 759524,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Osasco%2C_S%C3%A3o_Paulo%2C_Brazil_%288122072200%29.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 38709,
+    "name": "Piracicaba",
+    "population": 440835,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Piracicaba.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 42602,
+    "name": "Registro",
+    "population": 61927,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Templo_Budista.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 49102,
+    "name": "São João da Boa Vista",
+    "population": 96080,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sao_joao_da_boa_vista.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 54003,
+    "name": "Tatuí",
+    "population": 129130,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Conservat%C3%B3rio_de_Tatu%C3%AD_%282005%29.jpg"
+  },
+  {
+    "state": "SP",
+    "stateCode": 35,
+    "cityCode": 56453,
+    "name": "Vargem Grande Paulista",
+    "population": 52352,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/SaoPaulo_Municip_VargemGrandePaulista.svg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 400,
+    "name": "Almirante Tamandaré",
+    "population": 125861,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Marquis_of_tamandare_1873.jpg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 3701,
+    "name": "Cambé",
+    "population": 110923,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Parana_Municip_Cambe.svg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 5508,
+    "name": "Cianorte",
+    "population": 82988,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cianorte_vista_a%C3%A9rea.jpg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 9401,
+    "name": "Guarapuava",
+    "population": 189630,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Guarapuava_10.jpg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 15804,
+    "name": "Medianeira",
+    "population": 57910,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Parque_municipal_25_de_julho.jpg"
+  },
+  {
+    "state": "PR",
+    "stateCode": 41,
+    "cityCode": 19509,
+    "name": "Piraquara",
+    "population": 127433,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/CentroHistoricoPiraquaraPR.JPG"
+  },
+  {
+    "state": "SC",
+    "stateCode": 42,
+    "cityCode": 1406,
+    "name": "Araranguá",
+    "population": 76611,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vista_do_alto_do_Farol_do_Morro_dos_Conventos.jpg"
+  },
+  {
+    "state": "SC",
+    "stateCode": 42,
+    "cityCode": 4202,
+    "name": "Chapecó",
+    "population": 282648,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Vista_da_regi%C3%A3o_central.jpg"
+  },
+  {
+    "state": "SC",
+    "stateCode": 42,
+    "cityCode": 7007,
+    "name": "Içara",
+    "population": 63489,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vistalagoajacare.JPG"
+  },
+  {
+    "state": "SC",
+    "stateCode": 42,
+    "cityCode": 8906,
+    "name": "Jaraguá do Sul",
+    "population": 199519,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jaragu%C3%A1_do_Sul_Landscape.jpg"
+  },
+  {
+    "state": "SC",
+    "stateCode": 42,
+    "cityCode": 19309,
+    "name": "Videira",
+    "population": 59074,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Parte_do_centro_de_Videira_SC.JPG"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 3004,
+    "name": "Cachoeira do Sul",
+    "population": 82222,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Ch%C3%A2teau_d%27Eau.jpg"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 4630,
+    "name": "Capão da Canoa",
+    "population": 66234,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Cap%C3%A3o_Beach.JPG"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 7906,
+    "name": "Farroupilha",
+    "population": 72552,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Panoramy_Farroupilha.jpg"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 13409,
+    "name": "Novo Hamburgo",
+    "population": 235802,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Vista_de_Novo_Hamburgo_%2849741951483%29.png"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 16808,
+    "name": "Santa Cruz do Sul",
+    "population": 138270,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Santa_Cruz_do_Sul_montage_1.jpg"
+  },
+  {
+    "state": "RS",
+    "stateCode": 43,
+    "cityCode": 21600,
+    "name": "Tramandaí",
+    "population": 56430,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/RioGrandedoSul_Municip_Tramandai.svg"
+  },
+  {
+    "state": "MS",
+    "stateCode": 50,
+    "cityCode": 3702,
+    "name": "Dourados",
+    "population": 264017,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Dourados_-_Parque_dos_Ip%C3%AAs.jpg"
+  },
+  {
+    "state": "MT",
+    "stateCode": 51,
+    "cityCode": 1803,
+    "name": "Barra do Garças",
+    "population": 73878,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Barragarcas.jpg"
+  },
+  {
+    "state": "MT",
+    "stateCode": 51,
+    "cityCode": 6752,
+    "name": "Pontes e Lacerda",
+    "population": 55762,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/MatoGrosso_Municip_PonteseLacerda.svg"
+  },
+  {
+    "state": "GO",
+    "stateCode": 52,
+    "cityCode": 5497,
+    "name": "Cidade Ocidental",
+    "population": 101570,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cidade_Ocidental_26.jpg"
+  },
+  {
+    "state": "GO",
+    "stateCode": 52,
+    "cityCode": 10000,
+    "name": "Inhumas",
+    "population": 53884,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Goias_Municip_Inhumas.svg"
+  },
+  {
+    "state": "GO",
+    "stateCode": 52,
+    "cityCode": 21858,
+    "name": "Valparaíso de Goiás",
+    "population": 218416,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Goias_Municip_ValparaisodeGoias.svg"
+  }
+]

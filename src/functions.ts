@@ -1,4 +1,4 @@
-import citiesCsv from '../database/cities.csv?raw'
+import citiesJson from '../database/cities.json?raw'
 
 export function normalize(str:string) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -18,61 +18,10 @@ export type City = {
   imageUrl?: string
 }
 
-async function getWikipediaImageUrl(title: string): Promise<string | undefined> {
-  try {
-    const url = `https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=pageimages&piprop=original&titles=${encodeURIComponent(title)}`
-    const res = await fetch(url)
-    if (!res.ok) return undefined
-    const data = await res.json()
-    const pages = data?.query?.pages
-    if (!pages) return undefined
-    const firstPage = pages[Object.keys(pages)[0]]
-    return firstPage?.original?.source
-  } catch {
-    return undefined
-  }
-}
-
 export async function getCitiesInfo(): Promise<City[]> {
-  const txt = citiesCsv
-  const lines = txt.split(/\r?\n/).map(l => l.trim())
-  let cities: City[] = []
-  const titles = lines[0].split(';').map(c => c.trim())
-  let current = {} as any
-  lines.shift()
-
-  for (const line of lines) {
-    const cols = line.split(';').map(c => c.trim())
-    current = {}
-    if (cols.length < 4) continue
-
-    for (const i in titles) {
-        if(isNumber(cols[i].replaceAll('.',''))){
-            current[titles[i]] = parseInt(cols[i].replaceAll('.',''))
-        } else if(titles[i] != ""){
-            current[titles[i]] = cols[i]
-        }
-    }
-
-    const city = current as City
-    cities.push(city)
-    console.log(current)
-  }
-  cities = cities.filter(c => c.population > 50000)
-  cities = sliceCities(cities, 100)
-  let count = 0
-  for(const city of cities) {
-    city.imageUrl = await getWikipediaImageUrl(city.name)
-    if(city.imageUrl !== undefined){
-      count += 1
-    }
-    if(count >= 30){
-      break
-    }
-  }
-  cities = cities.filter(c => c.imageUrl !== undefined) as City[]
-  console.log(cities.length)
-  return cities
+  const txt = citiesJson
+  const cities = JSON.parse(txt) as City[]
+  return cities.filter(c => c.imageUrl !== undefined) as City[]
 }
 
 export function sliceCities(cities: City[], number: number): City[] {
@@ -82,4 +31,13 @@ export function sliceCities(cities: City[], number: number): City[] {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled.slice(0, number);
+}
+
+
+export function saveHighscore(score: number) {
+  localStorage.setItem("highscore", score.toString())
+}
+
+export function getHighscore(): number {
+  return Number(localStorage.getItem("highscore") ?? 0)
 }

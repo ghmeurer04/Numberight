@@ -1,6 +1,8 @@
 import './App.css'
 import CardList from './components/CardList'
-import { getCitiesInfo, sliceCities, type City} from './functions'
+import Popup from './components/popup'
+import background from '../database/background2.webp';
+import { getCitiesInfo, getHighscore, saveHighscore, sliceCities, type City} from './functions'
 import { useEffect, useState } from 'react'
 
 function generateRounds(allCities: City[], count: number) {
@@ -15,8 +17,9 @@ function App() {
     const [allCities, setAllCities] = useState<City[]>([])
     const [rounds, setRounds] = useState<City[][]>([])
     const [current, setCurrent] = useState(0)
+    const [highscore, setHighscore] = useState(getHighscore())
     const [feedback, setFeedback] = useState<{
-        type: 'correct' | 'wrong'
+        color: string,
         message: string
     } | null>(null)
     const [isLocked, setIsLocked] = useState(false)
@@ -27,7 +30,7 @@ function App() {
             const cities = (await getCitiesInfo()).filter(city => city.population > 10000)
             if (!isMounted) return
             setAllCities(cities)
-            setRounds(generateRounds(cities, 10))
+            setRounds(generateRounds(cities, 100))
         })()
         return () => {
             isMounted = false
@@ -41,15 +44,20 @@ function App() {
         const other = options.find(o => o.name !== guess.name)!
         if (guess.population >= other.population) {
             setFeedback({
-                type: 'correct',
-                message: `Correct! ${guess.name} has a population of ${guess.population} while ${other.name} has ${other.population}`,
+                color: 'bg-green-600',
+                message: `Correct!\n${guess.name}: ${(guess.population/1000).toFixed(1) + "k"}\n${other.name}: ${(other.population/1000).toFixed(1) + "k"}`,
             })
             setCurrent(current + 1)
         } else {
             setFeedback({
-                type: 'wrong',
-                message: `Wrong! ${guess.name} has a population of ${guess.population} while ${other.name} has ${other.population}`,
+                color: 'bg-red-600',
+                message: `Wrong!\n${guess.name}: ${(guess.population/1000).toFixed(1) + "k"}\n${other.name}: ${(other.population/1000).toFixed(1) + "k"}`,
             })
+            const highscore = getHighscore()
+            if (current > highscore) {
+                setHighscore(current)
+                saveHighscore(current)
+            }
             setCurrent(0)
         }
 
@@ -66,36 +74,35 @@ function App() {
     }
 
     return (
+        <div
+            className="min-h-screen w-full"
+            style={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
+        >
         <div className="min-h-screen flex items-center justify-center p-6">
-            {feedback && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center">
-                    <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
-                    <div
-                        className={[
-                            'relative px-6 py-4 rounded-lg shadow-lg text-white text-lg',
-                            feedback.type === 'correct' ? 'bg-green-600' : 'bg-red-600',
-                        ].join(' ')}
-                    >
-                        {feedback.message}
-                    </div>
-                </div>
-            )}
+            {feedback && <Popup color={feedback.color} message={feedback.message} />}
             <div className="w-full max-w-4xl">
                 <h1 className="text-2xl font-bold mb-6 fixed-top box-decoration-clone bg-linear-to-r">Numberight</h1>
                 <div className="mb-6">Which City 🏙️ has MORE inhabitants?
                                     Click on the city you think is larger.</div>
+                <div className="text-2xl font-bold mb-6 fixed-top">🔥 High Score: {highscore}</div>
                 <div className="text-2xl font-bold mb-6 fixed-top">🎯 Current Score: {current}</div>
                 <div className="flex flex-col md:flex-row gap-6">
-                    {rounds.length > 0 && (
+                    {rounds.length > 0 ? (
                         <CardList
                             key={rounds[current]?.map((city) => city.name).join('|')}
                             className="card-list-enter"
                             options={rounds[current]}
                             onClick={(city) => handleGuess(city)}
                         />
-                    )}
+                    ): <Popup color="bg-blue-600" message="Congratulations!!\nYou beat all the rounds.\nRefresh to play again."/>}
                 </div>
             </div>
+        </div>
         </div>
     )
 }
