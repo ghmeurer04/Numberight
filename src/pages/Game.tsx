@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function generateRounds(allCities: Item[], count: number) {
     const rounds: Item[][] = []
     for (let i = 0; i < count; i++) {
-        rounds.push(sliceCities(allCities, 10))
+        rounds.push(sliceCities(allCities, 2))
     }
     return rounds
 }
@@ -17,7 +17,6 @@ function Game() {
     const [rounds, setRounds] = useState<Item[][]>([])
     const [current, setCurrent] = useState(0)
     const [score, setScore] = useState(0)
-    const [highscore, setHighscore] = useState(getHighscore())
     const [feedback, setFeedback] = useState<{
         color: string,
         message: string
@@ -58,7 +57,6 @@ function Game() {
             })
             const savedHighscore = getHighscore()
             if (current > savedHighscore) {
-                setHighscore(current)
                 saveHighscore(current)
             }
 

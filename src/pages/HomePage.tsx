@@ -6,9 +6,9 @@ function Home() {
             <div className="w-full max-w-xl text-center text-white">
                 <h1 className="text-9xl font-bold mb-4">Numberight</h1>
                 <p className="mb-8 text-xl font-semibold">
-                    🏙️ Choose the bigger number 🏙️.<br />
-                    🎯 Build a streak 🎯.<br />
-                    🔥 Beat your high score 🔥.
+                    🌍 Compare the world 🌍.<br />
+                    🔢 Guess the bigger number 🔢.<br />
+                    🔥 Prove you know more 🔥
                 </p>
                 <Link
                     to="/play"

@@ -20,7 +20,6 @@ function convertNumber(value) {
     value = (value.slice(0, -1) * 1000000000000)
   } else {
     value = value.replace(/,/g, '')
-    value = parseFloat(value)
   }
   if (!isNaN(value) && !isNaN(parseFloat(value))){
     return parseFloat(value)
@@ -28,52 +27,15 @@ function convertNumber(value) {
   return value
 }
 
-async function getWikimediaImageUrl(searchTerm) {
-  const apiBase = "https://commons.wikimedia.org/w/api.php"
-  const searchParams = new URLSearchParams({
-    action: "query",
-    list: "search",
-    srsearch: searchTerm,
-    srnamespace: "6",
-    srlimit: "5",
-    format: "json"
-  })
-  const searchUrl = `${apiBase}?${searchParams.toString()}`
-
-  try {
-    const searchResponse = await fetch(searchUrl)
-    if (!searchResponse.ok) return undefined
-    const searchData = await searchResponse.json()
-    const titles = (searchData?.query?.search ?? [])
-      .map(item => item?.title)
-      .filter(Boolean)
-    if (titles.length === 0) return undefined
-
-    const infoParams = new URLSearchParams({
-      action: "query",
-      prop: "imageinfo",
-      titles: titles.join("|"),
-      iiprop: "url|size",
-      format: "json"
-    })
-    const infoUrl = `${apiBase}?${infoParams.toString()}`
-    const infoResponse = await fetch(infoUrl)
-    if (!infoResponse.ok) return undefined
-    const infoData = await infoResponse.json()
-
-    const pages = infoData?.query?.pages ?? {}
-    const images = Object.values(pages)
-      .map(page => page?.imageinfo?.[0])
-      .filter(info => info?.url && info?.width && info?.height)
-
-    if (images.length === 0) return undefined
-    //const best = images.sort((a, b) => (b.width * b.height) - (a.width * a.height))[0]
-    //console.log(searchTerm + ": " +images[0]?.url)
-    return images[0]?.url
-  } catch(e) {
-    console.log(e)
-    return undefined
-  }
+async function getImageUrl(searchTerm) {
+  searchTerm = encodeURIComponent(searchTerm);
+  const response = await fetch("https://pixabay.com/api/?key=54646120-363c40cbdce3c3d6daefe0fd0&q="+searchTerm+"&image_type=photo&per_page=3")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data.hits[0]?.webformatURL || "No image found for: " + searchTerm);
+    return data.hits[0]?.webformatURL || undefined;
+  });
+  return response
 }
 
 export async function exportCitiesJSON() {
@@ -107,20 +69,22 @@ export async function exportCitiesJSON() {
       list.push(current)
     }
   }
-  let srcWikimedia = {}
+  let src = {}
   for(const item of list) {
-    if (srcWikimedia[item.Name]) {
-      item.NameImage = srcWikimedia[item.Name]
-    } else {
-      item.NameImage = await getWikimediaImageUrl(item.Name)
-      srcWikimedia[item.Name] = item.NameImage
-    }
-    if (srcWikimedia[item.Description]) {
-      item.DescriptionImage = srcWikimedia[item.Description]
-    } else {
-      item.DescriptionImage = await getWikimediaImageUrl(item.Description.replace(/ in| of|Number|Players|Sales/g, '').replace(/Monthly Visits|Users/g, ' logo'))
-      srcWikimedia[item.Description] = item.DescriptionImage
-    }
+        if (src[item.Name]) {
+          item.NameImage = src[item.Name]
+        } else {
+          item.NameImage = await getImageUrl(item.Name.replace(/@/g, ''))
+          await new Promise(r => setTimeout(r, 500));
+          src[item.Name] = item.NameImage
+        }
+        if (src[item.Description]) {
+          item.DescriptionImage = src[item.Description]
+        } else {
+          item.DescriptionImage = await getImageUrl(item.Description.replace(/ in| of|Number|Players|Sales/g, '').replace(/Monthly Visits|Users/g, ' logo'))
+          await new Promise(r => setTimeout(r, 500));
+          src[item.Description] = item.DescriptionImage
+        }
   }
   list = list.filter(c => c.NameImage !== undefined && c.DescriptionImage !== undefined)
   const outputPath = path.resolve(process.cwd(), "database", "list.json")

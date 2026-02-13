@@ -8,9 +8,9 @@ interface Props{
 
 function CardList({options, onClick, className }: Props){
     return (
-        <div className={['flex flex-col md:flex-row gap-12', className].filter(Boolean).join(' ')}>
+        <div className={['flex flex-col md:flex-row md:justify-start md:items-start gap-12', className].filter(Boolean).join(' ')}>
             {options.map((item) => (<div onClick={() => onClick?.(item)}
-                className="group flex-1 rounded-3xl shadow-md overflow-hidden h-158 w-120 relative transform transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                className="group flex-1 rounded-3xl shadow-md overflow-hidden h-158 w-200 relative transform transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
                 key={normalize(item.Description + " " + item.Name)}>
                 <div className="absolute inset-0">
                     <div
