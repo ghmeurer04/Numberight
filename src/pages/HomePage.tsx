@@ -6,7 +6,7 @@ function Home() {
             <div className="w-full max-w-xl text-center text-white">
                 <h1 className="text-9xl font-bold mb-4">Numberight</h1>
                 <p className="mb-8 text-xl font-semibold">
-                    🏙️ Choose the larger city 🏙️.<br />
+                    🏙️ Choose the bigger number 🏙️.<br />
                     🎯 Build a streak 🎯.<br />
                     🔥 Beat your high score 🔥.
                 </p>

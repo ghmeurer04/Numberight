@@ -1,7 +1,19 @@
-import citiesJson from '../database/cities.json?raw'
+import listJson from '../database/list.json?raw'
 
 export function normalize(str:string) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+export function summarizeNumber(num: number): string {
+  if (num >= 1e9) {
+    return (num / 1e9).toFixed(1) + 'B';
+  } else if (num >= 1e6) {
+    return (num / 1e6).toFixed(1) + 'M';
+  } else if (num >= 1e3) {
+    return (num / 1e3).toFixed(1) + 'K';
+  } else {
+    return num.toString();
+  }
 }
 
 export function isNumber(value: string): boolean {
@@ -9,28 +21,33 @@ export function isNumber(value: string): boolean {
   return !isNaN(value as any) && !isNaN(parseFloat(value))
 }
 
-export type City = {
-  state: string
-  stateCode: string
-  cityCode: string
-  name: string
-  population: number
-  imageUrl?: string
+export type Item = {
+  Description: string
+  Name: string
+  Number: number
+  Source: string
+  NameImage: string
+  DescriptionImage: string
 }
 
-export async function getCitiesInfo(): Promise<City[]> {
-  const txt = citiesJson
-  const cities = JSON.parse(txt) as City[]
-  return cities.filter(c => c.imageUrl !== undefined) as City[]
+export async function getJSONInfo(): Promise<Item[]> {
+  const txt = listJson
+  const item = JSON.parse(txt) as Item[]
+  console.log(item)
+  return item as Item[]
 }
 
-export function sliceCities(cities: City[], number: number): City[] {
-  const shuffled = [...cities]; 
-  for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+export function sliceCities(list: Item[], number: number): Item[] {
+  const randomIndex = Math.floor(Math.random() * list.length);
+  const first = list[randomIndex];
+  const filtered = list.filter(item => item.Number !== first.Number && item.Description !== first.Description && (item.Number > first.Number * 0.3) && (item.Number < first.Number * 2.5));
+  const index = Math.floor(Math.random() * filtered.length);
+  if (filtered.length === 0) {
+    return sliceCities(list, number);
   }
-  return shuffled.slice(0, number);
+  const second = filtered[index];
+  const pair = [first, second];
+  return pair.slice(0, number);
 }
 
 
