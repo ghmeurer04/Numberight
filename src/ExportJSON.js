@@ -28,11 +28,15 @@ function convertNumber(value) {
 }
 
 async function getImageUrl(searchTerm) {
+  console.log("Searching image for: " + searchTerm);
   searchTerm = encodeURIComponent(searchTerm);
-  const response = await fetch("https://pixabay.com/api/?key=54646120-363c40cbdce3c3d6daefe0fd0&q="+searchTerm+"&image_type=photo&per_page=3")
+  const response = await fetch("https://pixabay.com/api/?key=54646120-363c40cbdce3c3d6daefe0fd0&q="+searchTerm+"&per_page=3")
   .then(res => res.json())
   .then(data => {
-    console.log(data.hits[0]?.webformatURL || "No image found for: " + searchTerm);
+    if (data.totalHits === 0) {
+      console.log("No image found for: " + searchTerm);
+      return undefined;
+    }
     return data.hits[0]?.webformatURL || undefined;
   });
   return response
@@ -71,10 +75,11 @@ export async function exportCitiesJSON() {
   }
   let src = {}
   for(const item of list) {
+    try{
         if (src[item.Name]) {
           item.NameImage = src[item.Name]
         } else {
-          item.NameImage = await getImageUrl(item.Name.replace(/@/g, ''))
+          item.NameImage = await getImageUrl(item.Name.replace(/@/g, '') + " flag")
           await new Promise(r => setTimeout(r, 500));
           src[item.Name] = item.NameImage
         }
@@ -84,6 +89,9 @@ export async function exportCitiesJSON() {
           item.DescriptionImage = await getImageUrl(item.Description.replace(/ in| of|Number|Players|Sales/g, '').replace(/Monthly Visits|Users/g, ' logo'))
           await new Promise(r => setTimeout(r, 500));
           src[item.Description] = item.DescriptionImage
+        }
+        } catch (e) {
+          console.error("Error fetching image for: " + item.Name + " or " + item.Description, e)
         }
   }
   list = list.filter(c => c.NameImage !== undefined && c.DescriptionImage !== undefined)

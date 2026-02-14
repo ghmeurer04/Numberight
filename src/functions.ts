@@ -38,6 +38,7 @@ export async function getJSONInfo(): Promise<Item[]> {
 }
 
 export function sliceCities(list: Item[], number: number): Item[] {
+  list = list.filter(item => typeof item.Number === "number" && !isNaN(item.Number))
   const randomIndex = Math.floor(Math.random() * list.length);
   const first = list[randomIndex];
   const filtered = list.filter(item => item.Number !== first.Number && item.Description !== first.Description && (item.Number > first.Number * 0.3) && (item.Number < first.Number * 2.5));

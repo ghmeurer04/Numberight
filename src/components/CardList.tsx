@@ -8,9 +8,9 @@ interface Props{
 
 function CardList({options, onClick, className }: Props){
     return (
-        <div className={['flex flex-col md:flex-row md:justify-start md:items-start gap-12', className].filter(Boolean).join(' ')}>
+        <div className={['flex gap-12', className].filter(Boolean).join(' ')}>
             {options.map((item) => (<div onClick={() => onClick?.(item)}
-                className="group flex-1 rounded-3xl shadow-md overflow-hidden h-158 w-200 relative transform transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                className="group flex-1 rounded-3xl shadow-md overflow-hidden h-158 w-240 relative transform transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
                 key={normalize(item.Description + " " + item.Name)}>
                 <div className="absolute inset-0">
                     <div
@@ -18,7 +18,8 @@ function CardList({options, onClick, className }: Props){
                         style={{
                             backgroundImage: item.DescriptionImage ? `url(${item.DescriptionImage})` : undefined,
                             clipPath: "polygon(0 0, 100% 0, 0 100%)",
-                            backgroundPosition: "80%" // shift toward diagonal
+                            backgroundPosition: "100%",
+                            backgroundSize: "50% auto"
                         }}
                     />
                     <div
@@ -26,7 +27,8 @@ function CardList({options, onClick, className }: Props){
                         style={{
                             backgroundImage: item.NameImage ? `url(${item.NameImage})` : undefined,
                             clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
-                            backgroundPosition: "-10%" // shift toward diagonal
+                            backgroundPosition: "500%",
+                            backgroundSize: "80% auto"
                         }}
                     />
                 </div>
