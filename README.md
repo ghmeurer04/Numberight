@@ -1,14 +1,21 @@
+
 # Numberight
 
-Numberight is a fast, simple game about choosing which option has the highest number. Make the right pick, build a streak, and see how far you can go.
+Numberight is a fast, simple daily game about guessing which option has the highest number. Each day, everyone plays the same set of rounds, similar to daily games like Wordle.
 
-## Game Overview
-- Each round shows two or options.
-- Your task is to choose the option with the highest number.
-- Correct choices increase your score; wrong choices end the streak.
+## Gameplay
+- Each day features 10 rounds, each showing two or more options.
+- Your task: pick the option with the highest number in each round.
+- After 10 rounds, a finish page shows which answers you got right and wrong.
+- Progress is saved in your browser's local storage, so you can continue later if you leave mid-game.
+- The daily challenge is the same for all players, so you can compare your results with friends.
 
-## Controls
-- Mouse or touch to select an option.
+## Features
+- Daily challenge: same rounds for everyone each day
+- 10 rounds per game
+- Finish page with detailed results
+- Progress saved locally (continue later)
+- Simple controls: mouse or touch
 
 ## Tech Stack
 - React
