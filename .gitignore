@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 *.code-workspace
-#database/Data Scrape
+database/Data Scrape

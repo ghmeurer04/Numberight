@@ -37,14 +37,17 @@ export async function getJSONInfo(): Promise<Item[]> {
   return item as Item[]
 }
 
-export function sliceCities(list: Item[], number: number): Item[] {
+export function sliceCities(list: Item[], number: number, mode: 'regular' | 'hard'): Item[] {
+  const upperLimit = mode === 'hard' ? 1.25 : 2.5
+  const lowerLimit = mode === 'hard' ? 0.8 : 0.4
+
   list = list.filter(item => typeof item.Number === "number" && !isNaN(item.Number))
   const randomIndex = Math.floor(Math.random() * list.length);
   const first = list[randomIndex];
-  const filtered = list.filter(item => item.Number !== first.Number && item.Description !== first.Description && (item.Number > first.Number * 0.3) && (item.Number < first.Number * 2.5));
+  const filtered = list.filter(item => item.Number !== first.Number && item.Description !== first.Description && (item.Number > first.Number * lowerLimit) && (item.Number < first.Number * upperLimit));
   const index = Math.floor(Math.random() * filtered.length);
   if (filtered.length === 0) {
-    return sliceCities(list, number);
+    return sliceCities(list, number, mode);
   }
   const second = filtered[index];
   const pair = [first, second];
