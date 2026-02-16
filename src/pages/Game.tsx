@@ -1,28 +1,20 @@
 import CardList from '../components/CardList'
 import Popup from '../components/Popup'
 import { useEffect, useState } from 'react'
-import { getJSONInfo, getHighscore, normalize, saveHighscore, sliceCities, type Item, summarizeNumber } from '../functions'
+import { getHighscore, normalize, saveHighscore, getRounds, type Item, summarizeNumber } from '../functions'
 import { Link } from 'react-router-dom'
+import background from '../../database/background.webp'
 import History, { type RoundResult } from '../components/History'
-
-function generateRounds(list: Item[], count: number, mode: 'regular' | 'hard'): Item[][] {
-    const rounds: Item[][] = []
-    for (let i = 0; i < count; i++) {
-        rounds.push(sliceCities(list, 2, mode))
-    }
-    return rounds
-}
 
 interface Props {
     mode: 'regular' | 'hard'
 }
 
-
 function Game({ mode }: Props) {
     const [rounds, setRounds] = useState<Item[][]>([])
-    const [current, setCurrent] = useState(0)
-    const [score, setScore] = useState(0)
-    const [history, setHistory] = useState<RoundResult[]>([])
+    const [history, setHistory] = useState<RoundResult[]>(localStorage.getItem(mode + '-history') ? JSON.parse(localStorage.getItem(mode + '-history') as string) : [])
+    const [current, setCurrent] = useState(history.length)
+    const [score, setScore] = useState(history.filter(h => h.wasCorrect).length)
     const [feedback, setFeedback] = useState<{
         color: string,
         message: string
@@ -32,9 +24,8 @@ function Game({ mode }: Props) {
     useEffect(() => {
         let isMounted = true
         ;(async () => {
-            const cities = (await getJSONInfo())
             if (!isMounted) return
-            setRounds(generateRounds(cities, 10, mode))
+            setRounds(await getRounds(mode))
         })()
         return () => {
             isMounted = false
@@ -53,6 +44,7 @@ function Game({ mode }: Props) {
         const wasCorrect = guess.Number >= other.Number
         const correctKey = wasCorrect ? guessKey : otherKey
         setHistory(prev => [...prev, { round: current + 1, items: options, correctKey, wasCorrect }])
+        localStorage.setItem(mode + '-history', JSON.stringify([...history, { round: current + 1, items: options, correctKey, wasCorrect }]))
         setCurrent(current + 1)
         if (wasCorrect) {
             setFeedback({
@@ -79,7 +71,12 @@ function Game({ mode }: Props) {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center p-6 bg-slate-950 text-white">
+        <div className="min-h-screen flex items-center justify-center p-6 bg-slate-950 text-white " style={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}>
             {feedback && <Popup color={feedback.color} message={feedback.message} onClick={handleFeedbackClose} />}
             <div className="w-full max-w-4xl">
                 <div>
