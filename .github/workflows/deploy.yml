@@ -21,10 +21,9 @@ jobs:
           node-version: '22'
       
       - name: Install dependencies
-        # perform a clean install and skip optional binaries to avoid the rollup optional-dependency bug
         run: |
-          rm -rf node_modules package-lock.json
-          npm ci --no-optional
+          rm -rf node_modules
+          npm install --no-optional
       
       - name: Build
         run: npm run build
