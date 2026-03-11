@@ -10,17 +10,7 @@ interface Props {
     mode: 'regular' | 'hard'
 }
 
-<<<<<<< HEAD
-type RoundResult = {
-    round: number
-    items: Item[]
-    correctKey: string
-}
-
-function Game() {
-=======
 function Game({ mode }: Props) {
->>>>>>> 7a44e2b992452fa0982db71e6ecec765eae5c95b
     const [rounds, setRounds] = useState<Item[][]>([])
     const [history, setHistory] = useState<RoundResult[]>(localStorage.getItem(mode + '-history') ? JSON.parse(localStorage.getItem(mode + '-history') as string) : [])
     const [current, setCurrent] = useState(history.length)
@@ -35,11 +25,7 @@ function Game({ mode }: Props) {
         let isMounted = true
         ;(async () => {
             if (!isMounted) return
-<<<<<<< HEAD
-            setRounds(generateRounds(cities, 10))
-=======
             setRounds(await getRounds(mode))
->>>>>>> 7a44e2b992452fa0982db71e6ecec765eae5c95b
         })()
         return () => {
             isMounted = false

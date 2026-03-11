@@ -1,5 +1,5 @@
 import './App.css'
-import {Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import background from '../database/background.webp'
 import Game from './pages/Game'
 import Home from './pages/HomePage'

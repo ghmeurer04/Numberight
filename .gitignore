@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 *.code-workspace
 database/Data Scrape
-database/rounds
+database/rounds/*.json
