@@ -8,14 +8,22 @@ function Home() {
                 <p className="mb-8 text-xl font-semibold">
                     🌍 Compare the world 🌍.<br />
                     🔢 Guess the bigger number 🔢.<br />
-                    🔥 Prove you know more 🔥
+                    🤔 Seems obvious… or is it? 🤔
                 </p>
-                <Link
-                    to="/play"
-                    className="inline-flex items-center justify-center rounded-full bg-white/90 px-8 py-3 text-lg font-semibold text-slate-900 shadow-lg transition hover:bg-white"
-                >
-                    Play
-                </Link>
+                <div className="flex flex-col sm:flex-row justify-center gap-6">
+                    <Link
+                        to="/play"
+                        className="inline-flex items-center justify-center rounded-full bg-white/90 px-8 py-3 text-lg font-semibold text-slate-900 shadow-lg transition hover:bg-white"
+                    >
+                        Regular Mode
+                    </Link>
+                    <Link
+                        to="/play/challenge"
+                        className="inline-flex items-center justify-center rounded-full bg-white/90 px-8 py-3 text-lg font-semibold text-slate-900 shadow-lg transition hover:bg-white"
+                    >
+                        Challenger Mode
+                    </Link>
+                </div>
             </div>
         </div>
     )

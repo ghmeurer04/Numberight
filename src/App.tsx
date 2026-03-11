@@ -1,6 +1,6 @@
 import './App.css'
 import {Route, Routes } from 'react-router-dom'
-import background from '../database/background2.webp'
+import background from '../database/background.webp'
 import Game from './pages/Game'
 import Home from './pages/HomePage'
 
@@ -17,7 +17,8 @@ function App() {
         >
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/play" element={<Game />} />
+                <Route path="/play" element={<Game mode="regular" />} />
+                <Route path="/play/challenge" element={<Game mode="hard" />} />
             </Routes>
         </div>
     )

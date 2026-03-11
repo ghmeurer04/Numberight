@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 Numberight
 
 A fast-paced, addictive number comparison game that tests your quick decision-making skills.
@@ -5,6 +6,26 @@ A fast-paced, addictive number comparison game that tests your quick decision-ma
 **🚀 Live Demo:** https://ghmeurer04.github.io/Numberight/
 
 ## 🎯 Game Overview
+=======
+
+# Numberight
+
+Numberight is a fast, simple daily game about guessing which option has the highest number. Each day, everyone plays the same set of rounds, similar to daily games like Wordle.
+
+## Gameplay
+- Each day features 10 rounds, each showing two or more options.
+- Your task: pick the option with the highest number in each round.
+- After 10 rounds, a finish page shows which answers you got right and wrong.
+- Progress is saved in your browser's local storage, so you can continue later if you leave mid-game.
+- The daily challenge is the same for all players, so you can compare your results with friends.
+
+## Features
+- Daily challenge: same rounds for everyone each day
+- 10 rounds per game
+- Finish page with detailed results
+- Progress saved locally (continue later)
+- Simple controls: mouse or touch
+>>>>>>> 7a44e2b992452fa0982db71e6ecec765eae5c95b
 
 Choose which option has the **highest number** from real-world data categories:
 - 📊 Population statistics

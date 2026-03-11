@@ -86,7 +86,7 @@ export async function exportCitiesJSON() {
         if (src[item.Description]) {
           item.DescriptionImage = src[item.Description]
         } else {
-          item.DescriptionImage = await getImageUrl(item.Description.replace(/ in| of|Number|Players|Sales/g, '').replace(/Monthly Visits|Users/g, ' logo'))
+          item.DescriptionImage = await getImageUrl(item.Description.replace(/ in| of|Number|Players|Sales|Yearly|(Liters)/g, '').replace(/Monthly Visits|Users|Monthly Listeners|Followers|Consumption/g, ' logo'))
           await new Promise(r => setTimeout(r, 500));
           src[item.Description] = item.DescriptionImage
         }
