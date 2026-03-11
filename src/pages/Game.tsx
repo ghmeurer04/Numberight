@@ -19,7 +19,6 @@ type RoundResult = {
 }
 
 function Game() {
-    const [allCities, setAllCities] = useState<Item[]>([])
     const [rounds, setRounds] = useState<Item[][]>([])
     const [current, setCurrent] = useState(0)
     const [score, setScore] = useState(0)
@@ -35,7 +34,6 @@ function Game() {
         ;(async () => {
             const cities = (await getJSONInfo())
             if (!isMounted) return
-            setAllCities(cities)
             setRounds(generateRounds(cities, 10))
         })()
         return () => {
